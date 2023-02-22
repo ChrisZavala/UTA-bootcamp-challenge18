@@ -1,0 +1,23 @@
+{
+  "name": "uta-bootcamp-challenge18",
+  "version": "1.0.0",
+  "description": "18 NoSQL: Social Network API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisZavala/UTA-bootcamp-challenge18.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisZavala/UTA-bootcamp-challenge18/issues"
+  },
+  "homepage": "https://github.com/ChrisZavala/UTA-bootcamp-challenge18#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.3.1"
+  }
+}
