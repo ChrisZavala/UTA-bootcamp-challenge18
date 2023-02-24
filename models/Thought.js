@@ -36,7 +36,6 @@ const thoughtSchema = new Schema(
         thoughtText: {
             type: String,
             required: true,
-            minlength: 1,
             maxlength: 280,
         },
         createdAt: {
@@ -57,7 +56,7 @@ const thoughtSchema = new Schema(
         getters: true,
     },
     id: false,
-}
+    }
 );
 
 //Create a virtual property `reactionCount` that retrieves the length of the thought's reactions array
