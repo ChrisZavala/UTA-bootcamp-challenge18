@@ -15,9 +15,7 @@ createThought(req, res) {
            {_id:req.body.userID},
            {$push:{ thoughts:dbThoughtData._id}},
            {new:true}
-
        )
-    
    })
    .then(userData => res.json(userData))
    .catch((err) => res.status(500).json(err));
@@ -35,7 +33,10 @@ updateThought(req, res) {
         !thought ? res.status(404).json({message: 'No thought by ID'}) : res.json(thought);
 
     }).catch((err) => res.status(500).json(err));
+
+
 },
+
 //   getThoughtById
 getThoughtById({ params }, res) {
     Thought.findOne({ _id: params.id })
@@ -52,17 +53,22 @@ getThoughtById({ params }, res) {
         res.status(400).json(err);
       });
   },
+
 // delete a thought
 deleteThought(req, res) {
     Thought.findOneAndDelete({_id: req.params.id})
     .then((thought) => {
         if(!thought){
             res.status(404).json({message: 'No thought with that ID'}) 
+
+
         }      
+        
         return User.findOneAndUpdate(
             {_id:req.body.userID},
             {$pull:{thoughts:thought._id}},
             {new:true}
+ 
         )
    }).then(() => res.json({message: 'User and associated apps deleted!'})).catch((err) => res.status(500).json(err));
 },
@@ -84,9 +90,13 @@ addReaction(req, res) {
       )
       .catch((err) => res.status(500).json(err));
   },
+
+
 //delete Reaction
+
 deleteReaction(req, res) {
   console.log(req.params)
+
     Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
       { $pull: { reactions: { reactionId: req.params.reactionId} } },

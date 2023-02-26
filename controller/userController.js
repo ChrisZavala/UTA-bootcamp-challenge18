@@ -44,7 +44,6 @@ const userController = {
     // addFriend
     addFriend(req, res) {
         console.log('You are adding a friend');
-        console.log(req.body);
         User.findOneAndUpdate({
             _id: req.params.id
         }, {
