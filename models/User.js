@@ -1,6 +1,6 @@
 //We are sticking to the plan and doing the models first and foremost. 
 //just following the preview readme.md to do this. 
-const { Schema, model } = require('mongoose');
+const { Schema, model, Types } = require('mongoose');
 
 const userSchema = new Schema({
     username: {
@@ -18,13 +18,13 @@ const userSchema = new Schema({
     thoughts: [
         {
             type: Schema.Types.ObjectId,
-            ref: 'Thought'
+            ref: "Thought"
         },
     ],
     friends: [
         {
             type: Schema.Types.ObjectId,
-            ref: 'User'
+            ref: "User"
         },
     ]
 }, {
