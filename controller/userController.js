@@ -64,6 +64,7 @@ const userController = {
         })
         .catch(err => res.status(400).json(err));
     },
+    //caps made all the difference in the 'friendID and not friendId' ugh 
     removeFriend(req, res) {
         User.findOneAndUpdate(
           { _id: req.params.id },
