@@ -76,6 +76,18 @@ SOFTWARE.
 
 
   ## Video Demonstration
-  [Click to see the video demo](https://polar-castle-47001.herokuapp.com/)
+  [The Social Network part 1](https://drive.google.com/file/d/12FK4c2o753uLMZEDFtxRZ0VSdZDUaqD-/view)
+
+  [The Social Network part 2](https://drive.google.com/file/d/1Tih6MWhXpQIAE12d4x75SOGrrqYQZOIz/view)
+
+  [The Social Network part 3](https://drive.google.com/file/d/1nxt-kzIZI6INFZT9R5y6_A3bH4MB2ati/view)
+
+  [The Social Network part 4](https://drive.google.com/file/d/1tQBuEtH6TWwSLfuE_xMOwCHDkkD_zcvG/view)
+
+  [The Social Network part 5](https://drive.google.com/file/d/1lUkiod4jqiClWAEiQfntDtoeKzkgw0pD/view)
+  
 
   ## Screenshots:
+![Alt text](./assets/images/Recording%202023-02-26%20at%2020.15.57.gif)
+![Alt text](./assets/images/Recording%202023-02-26%20at%2020.18.15.gif)
+![Alt text](./assets/images/Recording%202023-02-26%20at%2020.21.47.gif)
